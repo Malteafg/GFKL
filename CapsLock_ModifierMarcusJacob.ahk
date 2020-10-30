@@ -32,22 +32,14 @@ CapsLock & i::Up
 CapsLock & j::Left
 CapsLock & k::Down
 CapsLock & l::Right
-CapsLock & u::^Left
-CapsLock & o::^Right
-CapsLock & m::Home
-CapsLock & .::End
+CapsLock & m::^Left
+CapsLock & .::^Right
+CapsLock & u::Home
+CapsLock & o::End
 CapsLock & y::PgUp
 CapsLock & h::PgDn
 CapsLock & e::WheelUp
 CapsLock & d::WheelDown
-
-CapsLock & `;::Delete
-CapsLock & p::Backspace
-CapsLock & '::^Delete
-CapsLock & ?::^Backspace
-CapsLock & \::CapsLock
-CapsLock & n::Insert
-CapsLock & ,::AppsKey
 
 CapsLock & q::Media_Play_Pause
 CapsLock & w::Media_Prev
