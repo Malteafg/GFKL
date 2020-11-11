@@ -41,18 +41,18 @@ CapsLock & h::PgDn
 CapsLock & e::WheelUp
 CapsLock & d::WheelDown
 
-CapsLock & `;::Delete
-CapsLock & p::Backspace
-CapsLock & '::^Delete
-CapsLock & ?::^Backspace
+CapsLock & '::Delete
+CapsLock & `;::Backspace
+CapsLock & ?::^Delete
+CapsLock & p::^Backspace
 CapsLock & \::CapsLock
 CapsLock & n::Insert
 CapsLock & ,::AppsKey
 
+; Media
 CapsLock & q::Media_Play_Pause
 CapsLock & w::Media_Prev
 CapsLock & r::Media_Next
-CapsLock & t::Browser_Refresh
 
 ; Shortcuts
 CapsLock & z::^z
@@ -62,6 +62,28 @@ CapsLock & v::^v
 CapsLock & b::^y
 CapsLock & a::^a
 CapsLock & s::^s
+CapsLock & f::^f
+CapsLock & t::^t
+
+; Top row
+CapsLock & 1::1
+CapsLock & 2::^+Tab
+CapsLock & 3::^Tab
+CapsLock & 4::^F4
+CapsLock & 5::F5
+CapsLock & 6::6
+CapsLock & 7::7
+CapsLock & 8::8
+CapsLock & 9::9
+CapsLock & (::{
+CapsLock & )::}
+CapsLock & 0::0
+
+CapsLock & Space::Space
+CapsLock & Enter::Enter
+CapsLock & Backspace::Backspace
+CapsLock & Tab::Tab
+CapsLock & Esc::!F4
 
 
 ;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
