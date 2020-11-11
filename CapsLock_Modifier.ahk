@@ -82,7 +82,7 @@ CapsLock & 0::0
 CapsLock & Space::Space
 CapsLock & Enter::Enter
 CapsLock & Backspace::Backspace
-CapsLock & Tab::Tab
+CapsLock & Tab::Run chrome.exe
 CapsLock & Esc::!F4
 
 
