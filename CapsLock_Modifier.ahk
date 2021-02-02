@@ -23,7 +23,6 @@ return
 ; GOOGLE the selected text.
 CapsLock & g::
     ClipboardGet()
-    Run, http://www.google.com/search?q=%clipboard%             ; Launch with contents of clipboard
     ClipboardRestore()
 Return
 
@@ -66,18 +65,10 @@ CapsLock & f::^f
 CapsLock & t::^t
 
 ; Top row
-CapsLock & 1::1
-CapsLock & 2::^+Tab
-CapsLock & 3::^Tab
-CapsLock & 4::^F4
+CapsLock & @::^+Tab
+CapsLock & #::^Tab
+CapsLock & $::^F4
 CapsLock & 5::F5
-CapsLock & 6::6
-CapsLock & 7::7
-CapsLock & 8::8
-CapsLock & 9::9
-CapsLock & (::{
-CapsLock & )::}
-CapsLock & 0::0
 
 CapsLock & Space::Space
 CapsLock & Enter::Enter
@@ -96,12 +87,16 @@ ClipboardGet()
     OldClipboard:= ClipboardAll                         ;Save existing clipboard.
     Clipboard:= ""
     Send, ^c                                            ;Copy selected test to clipboard
-    ClipWait 0
+	ClipWait 0
     If ErrorLevel
         {
-        MsgBox, No Text Selected!
+        Run chrome.exe
         Return
         }
+	Else {
+		Run http://www.google.com/search?q=%clipboard%             ; Launch with contents of clipboard
+		Return
+	}
 }
 
 
